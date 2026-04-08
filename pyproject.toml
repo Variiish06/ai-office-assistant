@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ai-office-assistant"
+version = "1.0.0"
+description = "AI-powered office assistant for email triage, calendar scheduling, customer support, meeting briefs and RAG knowledge base"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Variiish06"}
+]
+keywords = ["ai", "office-assistant", "email-triage", "rag", "agentic-ai"]
+dependencies = [
+    "openai>=1.0.0",
+    "asyncio",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools]
+packages = []
