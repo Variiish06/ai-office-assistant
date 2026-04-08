@@ -1,4 +1,5 @@
 import os
+import asyncio
 from openai import OpenAI
 
 API_KEY = os.getenv("HF_TOKEN") or os.getenv("API_KEY")
@@ -21,3 +22,10 @@ def get_response(message: str) -> str:
         return completion.choices[0].message.content or "Task completed"
     except Exception as e:
         return f"Error: {str(e)}"
+
+async def main():
+    response = get_response("Hello, what can you help me with?")
+    print(response)
+
+if __name__ == "__main__":
+    asyncio.run(main())
