@@ -1,0 +1,22 @@
+name: ai-office-assistant
+version: "1.0"
+description: AI-powered office assistant for email triage, calendar scheduling, customer support, meeting briefs and RAG knowledge base
+author: Variiish06
+task: office-assistant
+benchmark: my_env_v4
+entry_point: inference.py
+reset_endpoint: /reset
+step_endpoint: /step
+close_endpoint: /close
+max_steps: 8
+observation_space:
+  type: text
+action_space:
+  type: text
+reward_range: [0, 1]
+tags:
+  - email-triage
+  - calendar-scheduling
+  - customer-support
+  - rag
+  - agentic-ai

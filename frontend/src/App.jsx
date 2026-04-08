@@ -53,9 +53,6 @@ export default function App() {
                 OpenEnv Hackathon · Meta × Scaler
               </p>
             </div>
-            <span className="badge badge-primary" style={{ fontSize: '0.65rem' }}>
-              Powered by Claude
-            </span>
           </div>
 
           {/* Tab navigation */}
