@@ -1,0 +1,14 @@
+{
+  "name": "ai-office-assistant",
+  "version": "1.0.0",
+  "description": "AI Office Assistant - OpenEnv Hackathon Meta x Scaler",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && cp -r dist ../backend/public",
+    "start": "cd backend && node server.js",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev"
+  }
+}

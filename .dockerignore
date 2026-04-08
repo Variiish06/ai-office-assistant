@@ -1,0 +1,18 @@
+# Dependencies (installed fresh in Docker)
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Built output (built fresh in Docker)
+frontend/dist/
+backend/public/
+
+# Environment secrets — set these as HF Secrets, never bake into image
+backend/.env
+.env
+
+# Dev/editor artifacts
+.git/
+.gitignore
+*.log
+.DS_Store

@@ -1,0 +1,20 @@
+# Environment secrets — NEVER commit real API keys
+.env
+backend/.env
+*.env.local
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Build output
+frontend/dist/
+backend/public/
+
+# Editor & OS
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

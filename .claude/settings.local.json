@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(node --check server.js)",
+      "Bash(node --check routes/triage.js)",
+      "Bash(node --check routes/calendar.js)",
+      "Bash(node --check routes/support.js)",
+      "Bash(node --check services/claudeService.js)",
+      "Bash(node --check routes/brief.js)",
+      "Bash(node --check services/ragService.js)",
+      "Bash(node --check routes/rag.js)",
+      "Bash(node server.js)",
+      "Bash(curl -s http://localhost:3001/api/health)",
+      "Bash(curl -s -X POST http://localhost:3001/api/triage -H \"Content-Type: application/json\" -d \"{\\\\\"emailText\\\\\":\\\\\"test\\\\\"}\")",
+      "Bash(curl -s http://localhost:3001/api/rag/status)",
+      "Bash(curl -s -X POST http://localhost:3001/api/support/generate -H \"Content-Type: application/json\" -d \"{\\\\\"customerMessage\\\\\":\\\\\"test\\\\\"}\")",
+      "Bash(curl -s -X POST http://localhost:3001/api/brief/generate -H \"Content-Type: application/json\" -d \"{\\\\\"personName\\\\\":\\\\\"test\\\\\",\\\\\"meetingTopic\\\\\":\\\\\"test\\\\\"}\")",
+      "Bash(curl -s http://localhost:3001/api/calendar/events)",
+      "Bash(curl -s -X POST http://localhost:3001/api/calendar/schedule -H \"Content-Type: application/json\" -d \"{\\\\\"title\\\\\":\\\\\"test meeting\\\\\"}\")",
+      "Bash(curl -s -X POST http://localhost:3001/api/brief/generate -H \"Content-Type: application/json\" -d \"{\\\\\"personName\\\\\":\\\\\"Sequoia Capital\\\\\",\\\\\"meetingTopic\\\\\":\\\\\"Series A pitch\\\\\"}\")",
+      "Bash(node --check routes/command.js)",
+      "Bash(curl -s -X POST http://localhost:3001/api/command -H \"Content-Type: application/json\" -d \"{\\\\\"command\\\\\":\\\\\"schedule a meeting with Priya tomorrow for 30 mins\\\\\"}\")",
+      "Bash(sed -i '/^import dotenv from .dotenv.;$/d; /^dotenv\\\\.config\\(\\);$/d' routes/command.js)",
+      "Bash(sed -i '/^import dotenv from .dotenv.;$/d; /^dotenv\\\\.config\\(\\);$/d' routes/triage.js)",
+      "Bash(sed -i '/^import dotenv from .dotenv.;$/d; /^dotenv\\\\.config\\(\\);$/d' services/calendarService.js)",
+      "Bash(sed -i '/^import dotenv from .dotenv.;$/d; /^dotenv\\\\.config\\(\\);$/d' services/gmailService.js)",
+      "Bash(node --check C:/Users/Kunch/desktop/ai-office-assistant/backend/server.js)"
+    ]
+  }
+}
