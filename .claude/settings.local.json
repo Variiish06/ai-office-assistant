@@ -25,7 +25,10 @@
       "Bash(sed -i '/^import dotenv from .dotenv.;$/d; /^dotenv\\\\.config\\(\\);$/d' routes/triage.js)",
       "Bash(sed -i '/^import dotenv from .dotenv.;$/d; /^dotenv\\\\.config\\(\\);$/d' services/calendarService.js)",
       "Bash(sed -i '/^import dotenv from .dotenv.;$/d; /^dotenv\\\\.config\\(\\);$/d' services/gmailService.js)",
-      "Bash(node --check C:/Users/Kunch/desktop/ai-office-assistant/backend/server.js)"
+      "Bash(node --check C:/Users/Kunch/desktop/ai-office-assistant/backend/server.js)",
+      "Bash(curl -s -X POST http://localhost:3001/reset -H \"Content-Type: application/json\")",
+      "Bash(curl -s -X POST http://localhost:3001/close)",
+      "Bash(curl:*)"
     ]
   }
 }
