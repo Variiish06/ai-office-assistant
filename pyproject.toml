@@ -12,14 +12,13 @@ license = {text = "MIT"}
 authors = [
   {name = "Variiish06"}
 ]
-keywords = ["ai", "office-assistant", "email-triage", "rag", "agentic-ai"]
 dependencies = [
     "openai>=1.0.0",
-    "asyncio",
+    "openenv-core>=0.2.0",
 ]
 
-[project.optional-dependencies]
-dev = []
+[project.scripts]
+server = "inference:main"
 
 [tool.setuptools]
 packages = []

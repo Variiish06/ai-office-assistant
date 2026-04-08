@@ -28,7 +28,9 @@
       "Bash(node --check C:/Users/Kunch/desktop/ai-office-assistant/backend/server.js)",
       "Bash(curl -s -X POST http://localhost:3001/reset -H \"Content-Type: application/json\")",
       "Bash(curl -s -X POST http://localhost:3001/close)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(pip install:*)",
+      "Bash(uv lock:*)"
     ]
   }
 }
